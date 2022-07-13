@@ -1,5 +1,3 @@
-// const sequelize = require("sequelize");
-
 module.exports = (sequelize, type) => {
   return sequelize.define(
     "Movie",
@@ -14,10 +12,9 @@ module.exports = (sequelize, type) => {
       },
       title: {
         type: type.STRING,
-        allowNull: false,
       },
       releaseDate: {
-        type: type.DATE,
+        type: type.STRING,
       },
       calification: {
         type: type.INTEGER,
